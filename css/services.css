@@ -65,6 +65,10 @@ h1, h2, h3, h4, h5 {
 
 /* end Reset */
 
+*{
+	box-sizing: border-box;
+}
+
 .wrapper{
     width: 900px;
     margin: 0 auto;
@@ -133,6 +137,7 @@ footer{
 
 .services-header-img{
     border-radius: 20px;
+    width: 100%;
 }
 
 a:hover{
@@ -141,4 +146,155 @@ a:hover{
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@media (max-width: 800px) {
+	
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	nav{
+		margin-top: 40px;
+		width: 100%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+	
+	.topNav{
+        display: flex;
+        flex-direction: column;
+		justify-content: space-around;
+	}
+	
+
+	.logo{
+		position: relative;
+		right: 48%;
+		bottom: 30px;
+		height: auto;
+		width: 120px;
+	}
+
+	.services-header-img{
+        display: none;
+        width: 100%;
+	}
+
+	h1{
+		width: 100%;
+		font-size: 45px;
+		position: relative;
+		top: 34px;
+		right: 12%;
+	}
+
+	.getStarted{
+		position: relative;
+		top: 36px;
+		right: 12%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.middle-img{
+		width: 100%;
+		height: auto;
+	}
+
+	hr{
+		width: 100%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+}
+
+@media (max-width: 400px){
+
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+
+
+	nav{
+		margin-top: 40px;
+		width: 100%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+	
+	.topNav{
+        display: flex;
+        flex-direction: column;
+		justify-content: space-around;
+	}
+	
+
+	.logo{
+		position: relative;
+		right: 48%;
+		bottom: 30px;
+		height: auto;
+		width: 120px;
+	}
+
+	.bigLogo{
+		display: none;
+	}
+
+	h1{
+		width: 100%;
+		font-size: 45px;
+		position: relative;
+		top: 34px;
+		right: 12%;
+	}
+
+	.getStarted{
+		position: relative;
+		top: 36px;
+		right: 12%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.middle-img{
+		width: 100%;
+		height: auto;
+	}
+
+	hr{
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+
+	.topRow{
+        display: flex;
+        flex-direction: column;
+	}
+
+	.topCol{
+		margin: 0 auto;
+        padding-bottom: 7%;
+        display: flex;
+        flex-direction: column;
+	}
+
+	.botRow{
+        display: inline;
+        display: flex;
+        flex-direction: column;
+	}
+
+	.botCol{
+		margin: 0 auto;
+        padding-bottom: 7%;
+        display: flex;
+        flex-direction: column;
+	}
 }
